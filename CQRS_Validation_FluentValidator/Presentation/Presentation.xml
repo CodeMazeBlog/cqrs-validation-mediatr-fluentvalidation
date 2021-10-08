@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Presentation</name>
+    </assembly>
+    <members>
+        <member name="T:Presentation.Controllers.UsersController">
+            <summary>
+            The users controller.
+            </summary>
+        </member>
+        <member name="M:Presentation.Controllers.UsersController.#ctor(MediatR.ISender)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Presentation.Controllers.UsersController"/> class.
+            </summary>
+            <param name="sender"></param>
+        </member>
+        <member name="M:Presentation.Controllers.UsersController.GetUsers(System.Threading.CancellationToken)">
+            <summary>
+            Gets all of the users.
+            </summary>
+            <param name="cancellationToken">The cancellation token.</param>
+            <returns>The collection of users.</returns>
+        </member>
+        <member name="M:Presentation.Controllers.UsersController.GetUserById(System.Int32,System.Threading.CancellationToken)">
+            <summary>
+            Gets the user with the specified identifier, if it exists.
+            </summary>
+            <param name="userId">The user identifier.</param>
+            <param name="cancellationToken">The cancellation token.</param>
+            <returns>The user with the specified identifier, if it exists.</returns>
+        </member>
+        <member name="M:Presentation.Controllers.UsersController.CreateUser(Application.Users.Commands.CreateUser.CreateUserRequest,System.Threading.CancellationToken)">
+            <summary>
+            Creates a new user based on the specified request.
+            </summary>
+            <param name="request">The create user request.</param>
+            <param name="cancellationToken">The cancellation token.</param>
+            <returns>The newly created user.</returns>
+        </member>
+        <member name="M:Presentation.Controllers.UsersController.UpdateUser(System.Int32,Application.Users.Commands.UpdateUser.UpdateUserRequest,System.Threading.CancellationToken)">
+            <summary>
+            Updates the user with the specified identifier based on the specified request, if it exists.
+            </summary>
+            <param name="userId">The user identifier.</param>
+            <param name="request">The update user request.</param>
+            <param name="cancellationToken">The cancellation token.</param>
+            <returns>No content.</returns>
+        </member>
+    </members>
+</doc>
